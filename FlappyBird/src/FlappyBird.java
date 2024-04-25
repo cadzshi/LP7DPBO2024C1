@@ -31,7 +31,7 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
     int pipeHeight = 512;
     ArrayList<Pipe> pipes;
 
-    //game logic2
+    //game logic
     Timer gameLoop;
     Timer pipesCooldown;
     int gravity = 1;
@@ -44,7 +44,7 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
         setPreferredSize(new Dimension(frameWidth, frameHeight));
         setFocusable(true);
         addKeyListener(this);
-        //setBackground(Color.blue);
+        
 
         //load images
         backgroundImage = new ImageIcon(getClass().getResource("assets/background.png")).getImage();
